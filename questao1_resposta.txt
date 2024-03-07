@@ -1,0 +1,19 @@
+1) A variável SOMA retornará 91
+
+Sabendo que temos as variáveis INDICE = 13, SOMA = 0, K = 0;
+
+Havendo um loop condicional "enquanto" que será executada apenas quando a variável K for menor do que a variável  INDICE que está predefinida com o valor 13, sabendo que a variável K foi inicializada com o valor 0;
+
+A variável SOMA, que foi inicializada com o valor 0, será atualizada de forma tal que SOMA = SOMA + K, fazendo com que no final do loop tenham os seguintes valores: SOMA = 78 + K, ou  SOMA = 78 + 13 (sabendo que o K, ao final do loop, assumirá 12 + 1) conforme a condicional enquanto K < INDICE (13) (retornando 12 a variável K), porém temos o cálculo K = K + 1 que significa 12 + 1 = 13.
+
+podendo ser visivelmente identificado assumindo o seguinte código em python:
+
+INDICE = 13
+SOMA = 0
+K = 0
+
+while K < INDICE:
+    K = K + 1
+    SOMA = SOMA + K
+
+print(SOMA)
